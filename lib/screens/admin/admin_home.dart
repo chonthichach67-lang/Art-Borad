@@ -39,11 +39,11 @@ class _AdminHomeState extends State<AdminHome> {
               title: const Row(children: [
                 Logo(34),
                 SizedBox(width: 10),
-                Flexible(child: Text('ARTBOARD  ADMIN', overflow: TextOverflow.ellipsis,
+                Flexible(child: Text('ARTBOARD ADMIN', overflow: TextOverflow.ellipsis,
                     style: TextStyle(fontWeight: FontWeight.w900, letterSpacing: 1.5))),
               ]),
               actions: [
-                IconButton(tooltip: 'แจ้งเตือน', icon: const Icon(Icons.notifications_none_rounded), onPressed: () => showNotificationsSheet(context)),
+                IconButton(tooltip: 'แจ้งเตือน!!', icon: const Icon(Icons.notifications_none_rounded), onPressed: () => showNotificationsSheet(context)),
                 IconButton(tooltip: 'ออกจากระบบ', icon: const Icon(Icons.logout_rounded), onPressed: () => logout(context)),
                 const SizedBox(width: 4),
               ],
