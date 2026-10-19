@@ -30,7 +30,7 @@ class _LoginState extends State<Login> {
   void _submit() {
     final matches = S.i.users.where((x) => x.name == n.text.trim() && x.pass == p.text).toList();
     final u = matches.isNotEmpty ? matches.first : null;
-    u == null ? snack(context, 'ชื่อหรือรหัสผ่านไม่ถูกต้อง') : enter(context, u);
+    u == null ? snack(context, 'ชื่อหรือรหัสผ่านไม่ถูกต้อง!') : enter(context, u);
   }
 
   @override
